@@ -63,8 +63,6 @@ Ad esempio, Python 3.8.18:
 pyenv install 3.8.18
 ```
 
-> Nota: installa anche Python 3.9 se ti serve per compatibilità futura.
-
 ---
 
 ## 4. Creare un virtualenv dedicato a EDL
