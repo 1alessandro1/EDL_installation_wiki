@@ -129,3 +129,5 @@ python3 setup.py build
 sudo $(which python3) setup.py install
 ```
 
+# Fine. Ora entrando nel percorso dove è stato installato EDL, verrà utilizzato il suo python3.8 e il virtualenv verrà attivato automaticamente
+
