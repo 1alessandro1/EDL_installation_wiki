@@ -24,6 +24,7 @@ sudo apt install -y \
     liblzma-dev \
     uuid-dev \
     libdb-dev
+    curl
 ```
 
 ---
@@ -80,7 +81,7 @@ Questo creerà un ambiente isolato per il progetto EDL.
 Vai nella cartella del progetto:
 
 ```bash
-cd /home/ale/Qualcomm_EDL
+cd /home/ale/qualcomm-EDL
 pyenv local qualcomm-EDL
 ```
 
