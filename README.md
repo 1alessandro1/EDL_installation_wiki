@@ -130,5 +130,16 @@ python3 setup.py build
 sudo $(which python3) setup.py install
 ```
 
+# Problemi comuni
+
+pylzma potrebbe fallire il building se GCC è troppo nuovo. Su ubuntu 24 o superiori dove c'è gcc14, è necessario installare una versione precedente 
+
+```
+sudo apt install gcc-12 g++-12
+export CC=gcc-12
+export CXX=g++-12
+pip install pylzma==0.5.0
+```
+
 # Fine. Ora entrando nel percorso dove è stato installato EDL, verrà utilizzato il suo python3.8 e il virtualenv verrà attivato automaticamente
 
