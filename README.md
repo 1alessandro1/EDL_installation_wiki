@@ -76,12 +76,12 @@ Questo creerà un ambiente isolato per il progetto EDL.
 
 ---
 
-## 5. Uso locale del virtualenv solo in `/home/ale/Qualcomm_EDL`
+## 5. Uso locale del virtualenv solo in `/home/$(whoami)/qualcomm-EDL`
 
 Vai nella cartella del progetto:
 
 ```bash
-cd /home/ale/qualcomm-EDL
+cd /home/$(whoami)/qualcomm-EDL
 pyenv local .
 ```
 
@@ -95,7 +95,7 @@ cd ~
 which python3
 # /usr/bin/python3
 
-cd /home/ale/Qualcomm_EDL
+cd /home/$(whoami)/Qualcomm_EDL
 which python3
 # /home/ale/.pyenv/shims/python3
 ```
