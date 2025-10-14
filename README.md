@@ -82,7 +82,7 @@ Vai nella cartella del progetto:
 
 ```bash
 cd /home/ale/qualcomm-EDL
-pyenv local qualcomm-EDL
+pyenv local .
 ```
 
 Questo crea un file `.python-version` e fa sì che **solo in questa cartella** il Python usi il virtualenv.
