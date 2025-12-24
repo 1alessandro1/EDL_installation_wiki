@@ -23,8 +23,9 @@ sudo apt install -y \
     libffi-dev \
     liblzma-dev \
     uuid-dev \
-    libdb-dev
-    curl
+    libdb-dev \
+    curl \
+    git
 ```
 
 ---
