@@ -25,7 +25,8 @@ sudo apt install -y \
     uuid-dev \
     libdb-dev \
     curl \
-    git
+    git \
+    zsh
 ```
 
 ---
@@ -49,7 +50,7 @@ eval "$(pyenv virtualenv-init - zsh)"
 
 Poi riapri il terminale o fai:
 
-```bash
+```zsh
 source ~/.zshrc
 ```
 
