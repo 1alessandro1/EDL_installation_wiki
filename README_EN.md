@@ -8,7 +8,7 @@ We will use EDL with **pyenv**, with **virtualenv**, and **Python 3.8**, which d
 
 Install the packages needed to build Python from source:
 
-```bash
+```zsh
 sudo apt update
 sudo apt install -y \
     build-essential \
@@ -36,7 +36,7 @@ sudo apt install -y \
 
 Official procedure:
 
-```bash
+```zsh
 # pyenv installation
 curl https://pyenv.run | bash
 ```
@@ -67,7 +67,7 @@ exec "$SHELL"
 
 For example, Python 3.8.18:
 
-```bash
+```zsh
 pyenv install 3.8.18
 ```
 
@@ -75,7 +75,7 @@ pyenv install 3.8.18
 
 ## 4. Create a dedicated virtualenv for EDL
 
-```bash
+```zsh
 pyenv virtualenv 3.8.18 qualcomm-EDL
 ```
 
@@ -97,7 +97,7 @@ Outside this folder, Python will remain the system one (`/usr/bin/python3`).
 
 Check:
 
-```bash
+```zsh
 cd ~
 which python3
 # /usr/bin/python3
@@ -113,7 +113,7 @@ which python3
 
 Debian/Ubuntu/Mint/etc.
 
-```bash
+```zsh
 sudo apt install adb fastboot python3-dev python3-pip liblzma-dev git && sudo apt purge modemmanager
 git clone https://github.com/bkerler/edl.git # do NOT use --recurse-submodules
 cd edl
@@ -125,13 +125,13 @@ Proceed by running the script as root:
 
 ```bash
 chmod +x ./install-linux-edl-drivers.sh
-bash ./install-linux-edl-drivers.sh
+sudo ./install-linux-edl-drivers.sh
 sudo update-initramfs -u
 ```
 
-## 7. Reboot; after reboot build the project
+## 7. Reboot and build the project
 
-```bash
+```zsh
 python3 setup.py build
 sudo $(which python3) setup.py install
 ```
@@ -140,7 +140,7 @@ sudo $(which python3) setup.py install
 
 `pylzma` may fail to build if GCC is too new. On Ubuntu 24 or later where `gcc-14` is present, you need to install an older version:
 
-```bash
+```zsh
 sudo apt install gcc-12 g++-12
 export CC=gcc-12
 export CXX=g++-12
