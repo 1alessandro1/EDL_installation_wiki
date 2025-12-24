@@ -83,8 +83,8 @@ Questo creerà un ambiente isolato per il progetto EDL.
 Vai nella cartella del progetto:
 
 ```bash
-cd /home/$(whoami)/qualcomm-EDL
-pyenv local .
+mkdir /home/$(whoami)/qualcomm-EDL && cd /home/$(whoami)/qualcomm-EDL
+pyenv local qualcomm-EDL
 ```
 
 Questo crea un file `.python-version` e fa sì che **solo in questa cartella** il Python usi il virtualenv.
