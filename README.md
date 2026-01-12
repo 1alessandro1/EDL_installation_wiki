@@ -130,7 +130,7 @@ Proseguire con l'eseguire lo script come root:
 
 ```
 chmod +x ./install-linux-edl-drivers.sh
-bash ./install-linux-edl-drivers.sh
+sudo ./install-linux-edl-drivers.sh
 sudo update-initramfs -u
 ```
 
