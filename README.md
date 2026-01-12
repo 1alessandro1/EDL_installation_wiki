@@ -106,7 +106,7 @@ cd ~
 which python3
 # /usr/bin/python3
 
-cd /home/$(whoami)/Qualcomm_EDL
+cd /home/$(whoami)/qualcomm-EDL
 which python3
 # /home/ale/.pyenv/shims/python3
 ```
