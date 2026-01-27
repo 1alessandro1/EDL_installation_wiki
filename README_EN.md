@@ -146,6 +146,7 @@ sudo update-initramfs -u
 ## 7. Reboot and build the project
 
 ```zsh
+cd /home/$(whoami)/qualcomm-EDL
 python3 setup.py build
 sudo $(which python3) setup.py install
 ```
