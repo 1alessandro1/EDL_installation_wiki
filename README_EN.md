@@ -8,7 +8,7 @@ We will use EDL with **pyenv**, with **virtualenv**, and **Python 3.8**, which d
 
 Install the packages needed to build Python from source:
 
-```zsh
+```bash
 sudo apt update
 sudo apt install -y \
     build-essential \
@@ -49,11 +49,25 @@ eval "$(pyenv init - zsh)"
 eval "$(pyenv virtualenv-init - zsh)"
 ```
 
+Or if you're using BASH, edit `.bashrc`
+
+
+```bash
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+
 Then reopen the terminal or run:
 
-```zsh
+```bash
 source ~/.zshrc
 ```
+
+if you're using BASH, do the same thing but with `.bashrc`
+
 
 Only if it still gives problems, try:
 
