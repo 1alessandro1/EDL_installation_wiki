@@ -97,7 +97,9 @@ This will create an isolated environment for the EDL project.
 
 ---
 
-## 5. Use the virtualenv locally only in `/home/$(whoami)/qualcomm-EDL`
+## 5. Custom folder to automatically activate it
+
+The following lines will just activate the virtualenv when you `cd` into `/home/$(whoami)/qualcomm-EDL`
 
 Go into the project folder:
 
