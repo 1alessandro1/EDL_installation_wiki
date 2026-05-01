@@ -27,7 +27,6 @@ sudo apt install -y \
     libdb-dev \
     curl \
     git \
-    zsh
 ```
 
 ---
