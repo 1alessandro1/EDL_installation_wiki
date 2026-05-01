@@ -1,7 +1,7 @@
 # EDL installation wiki
 Questa guida esiste perché mi dimentico sempre come fare a installare il [progetto fantastico](https://github.com/bkerler/edl) di Bjoern Kerler.
 
-Useremo EDL con `pyenv`, creando un virtualenv con Python 3.8 (o 3.11/3.12) per non avere i problemi di compatibilità causati dalle versioni più recenti (come la 3.13) su questo progetto.
+Useremo EDL con `pyenv`, creando un virtualenv con una versione più vecchia di Python (3.11/3.12) per non avere i problemi di compatibilità causati dalle versioni più recenti (come la 3.13) su questo progetto.
 
 ## 1. Prerequisiti di sistema
 
