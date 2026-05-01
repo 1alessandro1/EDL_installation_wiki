@@ -154,3 +154,29 @@ pip install pylzma==0.5.0
 
 # Fine. Ora entrando nel percorso dove è stato installato EDL, verrà utilizzato il suo python3.8 e il virtualenv verrà attivato automaticamente
 
+
+# Aggiornamenti
+
+Se avete già eseguito le istruzioni sovrastanti, è sufficiente fare un `git pull` e rebuildare il progetto
+
+```
+# 1. Installa la versione 3.12.2 (una delle più stabili)
+pyenv install 3.12.13
+
+# 2. Crea il virtualenv
+pyenv virtualenv 3.12.13 qualcomm-EDL-2026
+
+# 3. Attivalo nella cartella del progetto
+cd /home/ale/Qualcomm_EDL_2026/
+pyenv local qualcomm-EDL-2026
+
+# 4. Installa i requisiti
+pip install -r requirements.txt
+
+# 5. Installa il pacchetto EDL
+# Usiamo il flag CFLAGS perché GCC 14 è comunque molto severo
+CFLAGS="-Wno-int-conversion" pip install -e .
+```
+
+
+
